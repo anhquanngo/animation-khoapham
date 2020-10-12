@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import SlideAnim from './components/SlideAnim';
+import TransformView from './components/TransformView';
+import TranImage from './components/TranImage';
 
 export default class App extends Component {
   render() {
@@ -9,11 +11,9 @@ export default class App extends Component {
         style={{
           flex: 1,
           justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor: 'lightblue'
         }}
       >
-        <SlideAnim />
+        <TranImage />
       </View>
     );
   }
